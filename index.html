@@ -17,6 +17,7 @@
     .agenda{padding:10% 13%;justify-content:center}.agenda h2{text-align:center}.agenda .lead{text-align:center;font-weight:700}.agenda-card{background:#fff;border-radius:10px;padding:5% 6%;border-left:3px solid var(--blue);box-shadow:0 3px 12px #10182812}.agenda-card:nth-child(2),.agenda-card:nth-child(5){border-color:#e4b900}.agenda-card:nth-child(3),.agenda-card:nth-child(6){border-color:var(--green)}.agenda-card strong{display:block;font-size:clamp(15px,2vw,31px);margin-bottom:.25em}.agenda-card span{font-size:clamp(10px,1.2vw,19px);color:#5b6470}
     .timer-wrap{display:grid;grid-template-columns:1.35fr .65fr;gap:6%;align-items:center;flex:1}.clock{font:900 clamp(45px,8vw,126px)/1 ui-monospace,SFMono-Regular,Consolas,monospace;color:var(--yellow);letter-spacing:-.06em}.timer-actions{display:flex;gap:10px;margin-top:8%}.timer-actions button{border:0;border-radius:999px;cursor:pointer}.timer-actions button{padding:.75em 1.3em;font-weight:800}.primary{background:var(--yellow);color:var(--blue)}.secondary{background:#ffffff20;color:#fff;border:1px solid #ffffff55!important}.progress{height:10px;border-radius:12px;background:#ffffff26;overflow:hidden;margin-top:7%}.progress>div{height:100%;width:0;background:var(--yellow);transition:width .3s}
     .track{display:flex;align-items:center;gap:2%;margin-top:2.5%}.track>div{flex:1;padding:2.4%;border-radius:12px;background:#fff;border-top:7px solid var(--green);box-shadow:0 4px 14px #10182810}.track>div:nth-child(2){border-color:var(--blue)}.track>div:nth-child(3){border-color:#e4b900}.arrow{flex:0!important;background:none!important;box-shadow:none!important;border:0!important;font-size:clamp(18px,2.5vw,40px);padding:0!important}
+    .scope-equation{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:1.2%;margin-top:1.3%}.scope-hub{border-radius:12px;padding:2.2%;text-align:center;font-size:clamp(12px,1.35vw,21px);font-weight:800;background:#fff;border:1px solid #d0d5dd}.scope-symbol{font-size:clamp(20px,2.5vw,40px);font-weight:900;color:var(--blue)}.scope-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1%;margin-top:1.6%}.scope-node{border-radius:10px;padding:3.8% 5%;background:#fff;border-left:4px solid var(--blue);box-shadow:0 3px 10px #1018280d;font-size:clamp(10px,1.05vw,17px);font-weight:800}.scope-node:nth-child(2n){border-color:#e4b900}.scope-node:nth-child(3n){border-color:var(--green)}.work-chips{display:grid;grid-template-columns:repeat(8,1fr);gap:.7%;margin-top:1.5%}.work-chips span{border-radius:999px;padding:.55em .3em;text-align:center;background:#eaf3fa;color:var(--blue);font-size:clamp(8px,.85vw,14px);font-weight:800}.fm-band{margin-top:1.5%;padding:1.3% 1.7%;border-radius:11px;background:#fff3a5;color:#473b00;font-size:clamp(8px,.83vw,13px);line-height:1.45}
     .template{border:2px solid #d0d5dd;border-radius:16px;padding:4%;background:#fff;flex:1}.line{height:clamp(22px,3.1vh,43px);border-bottom:1px solid #98a2b3;margin-bottom:1.3%}.check{display:grid;grid-template-columns:repeat(3,1fr);gap:1%;margin-top:2%}.check div{padding:2%;border-radius:9px;background:#f2f4f7;text-align:center;font-size:clamp(9px,1vw,16px)}
     .chapter-nav{position:fixed;z-index:25;left:50%;top:12px;transform:translateX(-50%);display:flex;align-items:center;gap:4px;padding:6px;border-radius:999px;background:#101820e8;box-shadow:0 8px 28px #0003}.chapter-nav button{border:0;border-radius:999px;padding:8px 13px;background:transparent;color:#fff;cursor:pointer;font-size:13px;font-weight:700}.chapter-nav button:hover,.chapter-nav button.active{background:var(--yellow);color:var(--blue)}.chapter-nav .fullscreen{width:34px;padding:8px 0}
     .dot-nav{position:fixed;z-index:24;right:18px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;align-items:center;gap:7px;padding:10px 7px;border-radius:999px;background:#101820c9}.dot-nav button{width:9px;height:9px;padding:0;border:0;border-radius:50%;background:#ffffff70;cursor:pointer;transition:.2s}.dot-nav button:hover{background:#fff;transform:scale(1.35)}.dot-nav button.active{height:22px;border-radius:6px;background:var(--yellow)}.dot-counter{font-size:10px;color:#fff;margin-top:3px}.slide-index{position:absolute;right:3.2%;bottom:3%;font-size:clamp(9px,.9vw,14px);color:#98a2b3}.blue .slide-index{color:#b8d1e5}.yellow .slide-index{color:#3973a4}
@@ -38,9 +39,25 @@
     <div class="eyebrow">OUTCOME</div><h2>今天，我们带走一份<br>AI机会组合</h2><div class="rule"></div>
     <div class="grid3">
       <div class="card accent-green"><span class="pill">NOW</span><h3>立即应用</h3><div class="number">2–3</div><p>个Quick Wins。现有合规工具即可完成，会后马上试用和推广。</p></div>
-      <div class="card accent-blue"><span class="pill">NEXT</span><h3>业务试点</h3><div class="number">1–2</div><p>个Pilot Ideas。通过数据、流程和6–12周小范围试点验证。</p></div>
-      <div class="card accent-yellow"><span class="pill">LATER</span><h3>未来机会</h3><div class="number">∞</div><p>保留暂不成熟但有价值的构想，写明再次评估的条件和时间。</p></div>
+      <div class="card accent-blue"><span class="pill">NEXT</span><h3>业务试点</h3><div class="number">2–3</div><p>个Pilot Ideas。通过数据、流程和6–12周小范围试点验证。</p></div>
+      <div class="card accent-yellow"><span class="pill">LATER</span><h3>未来机会</h3><div class="number">≥2</div><p>个未来机会。保留有价值的构想，并写明再次评估的条件和时间。</p></div>
     </div><div class="slide-index"></div>
+  </section>
+
+  <section class="slide" data-title="地产工作范围地图">
+    <div class="eyebrow">REAL ESTATE OPPORTUNITY MAP</div><h2>从工作范围 × 工作类目寻找AI机会</h2>
+    <div class="scope-equation">
+      <div class="scope-hub">地产全生命周期<br><span class="small">我们在哪里创造价值？</span></div><div class="scope-symbol">×</div>
+      <div class="scope-hub">日常工作类目<br><span class="small">我们每天如何推进工作？</span></div><div class="scope-symbol">=</div>
+      <div class="scope-hub" style="background:var(--blue);color:#fff">AI机会<br><span class="small" style="color:#d7e8f4">提效 · 改善 · 创新</span></div>
+    </div>
+    <div class="scope-grid">
+      <div class="scope-node">01 · 资产管理</div><div class="scope-node">02 · 成本管理</div><div class="scope-node">03 · 买地 / 获取土地</div><div class="scope-node">04 · 租赁</div>
+      <div class="scope-node">05 · 建设策划</div><div class="scope-node">06 · 施工与移交</div><div class="scope-node">07 · 运营维护</div><div class="scope-node">08 · 设备再投资 / 更换</div>
+    </div>
+    <div class="work-chips"><span>计划</span><span>预算</span><span>报告</span><span>会议</span><span>数据分析</span><span>沟通 / 邮件</span><span>合同 / 标准</span><span>数字化工具</span></div>
+    <div class="fm-band"><b>运营维护与再投资提示：</b>技术维护 · 绿化 · 能源/排放/水 · 生命安全与安防 · 清洁 · 废弃物/除雪/虫控 · IT相关FM · 商业设备与服务 · 租户技术协调。想一想：这些范围中的计划、预算、报告、数据、沟通和决策，哪些可以被AI支持？</div>
+    <div class="slide-index"></div>
   </section>
 
   <section class="slide" data-title="会前准备">
@@ -160,7 +177,7 @@
     <div class="grid4">
       <div class="card" style="color:var(--ink)"><div class="number">30″</div><h3>机会全景</h3><p>我们发现了什么？NOW / NEXT / LATER如何分布？</p></div>
       <div class="card" style="color:var(--ink)"><div class="number">45″</div><h3>NOW</h3><p>2–3个Quick Wins、适用用户、模板与启用动作。</p></div>
-      <div class="card" style="color:var(--ink)"><div class="number">75″</div><h3>NEXT</h3><p>1–2个Pilots：价值、How、Cost、Who、指标与风险。</p></div>
+      <div class="card" style="color:var(--ink)"><div class="number">75″</div><h3>NEXT</h3><p>2–3个Pilots：价值、How、Cost、Who、指标与风险。</p></div>
       <div class="card" style="color:var(--ink)"><div class="number">30″</div><h3>行动</h3><p>Owner、所需支持，以及LATER机会池如何管理。</p></div>
     </div><div class="slide-index"></div>
   </section>
@@ -238,7 +255,7 @@
     <div class="grid6">
       <div class="card accent-green"><h3>1 · NOW是什么？</h3><p>2–3个能立即采用的Quick Wins明确了吗？</p></div>
       <div class="card accent-green"><h3>2 · 如何复用？</h3><p>工具、模板、信息红线和审核点清楚吗？</p></div>
-      <div class="card accent-blue"><h3>3 · NEXT是什么？</h3><p>1–2个可在6–12周验证的Pilot明确了吗？</p></div>
+      <div class="card accent-blue"><h3>3 · NEXT是什么？</h3><p>2–3个可在6–12周验证的Pilot明确了吗？</p></div>
       <div class="card accent-blue"><h3>4 · 如何验证？</h3><p>地点、How、Cost、指标、风险清楚吗？</p></div>
       <div class="card accent-yellow"><h3>5 · 谁行动？</h3><p>每项都有Owner、首个动作和日期吗？</p></div>
       <div class="card accent-yellow"><h3>6 · LATER去哪？</h3><p>记录在哪里，何时、满足什么条件后复看？</p></div>
@@ -253,11 +270,11 @@
 
 <nav class="chapter-nav" id="chapterNav" aria-label="内容板块">
   <button data-start="0">总览</button>
-  <button data-start="4">90分钟流程</button>
-  <button data-start="6">共创工具</button>
-  <button data-start="14">Facilitator专区</button>
-  <button data-start="17">物料准备</button>
-  <button data-start="18">现场Guide</button>
+  <button data-start="5">90分钟流程</button>
+  <button data-start="7">共创工具</button>
+  <button data-start="15">Facilitator专区</button>
+  <button data-start="18">物料准备</button>
+  <button data-start="19">现场Guide</button>
   <button class="fullscreen" onclick="toggleFullScreen()" title="全屏">⛶</button>
 </nav>
 <nav class="dot-nav" id="dotNav" aria-label="页面导航"><span class="dot-counter" id="dotCounter"></span></nav>
